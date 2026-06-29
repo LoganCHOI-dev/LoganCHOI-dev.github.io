@@ -13,8 +13,6 @@
       --soft: #f6f8fc;
       --accent: #7a4a1f;
       --accent-soft: #f6efe8;
-      --warn: #9a6500;
-      --warn-soft: #fff5dc;
     }
 
     * { box-sizing: border-box; }
@@ -65,25 +63,6 @@
     ul { margin: 0; padding-left: 22px; }
     a { color: var(--accent); font-weight: 700; }
 
-    .meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    .pill {
-      display: inline-flex;
-      align-items: center;
-      min-height: 28px;
-      padding: 0 10px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: #fff;
-      font-weight: 700;
-    }
-
     .note {
       padding: 12px;
       border: 1px solid var(--line);
@@ -93,11 +72,10 @@
       font-size: 14px;
     }
 
-    .todo {
-      border-color: #efc46f;
-      background: var(--warn-soft);
-      color: var(--warn);
-      font-weight: 700;
+    .url {
+      color: var(--muted);
+      font-size: 14px;
+      word-break: break-word;
     }
 
     @media (max-width: 640px) {
@@ -113,12 +91,7 @@
       <header>
         <h1>Privacy Policy</h1>
         <p>Knight's Tour : Extreme Puzzle</p>
-        <div class="meta">
-          <span class="pill">Package: com.loganchoi.knightstour</span>
-          <span class="pill">Effective date: June 29, 2026</span>
-          <span class="pill">Version: 0.1.0</span>
-          <span class="pill">URL: LoganCHOI-dev.github.io/Knightstour/privacy-policy.html</span>
-        </div>
+        <p class="url">https://LoganCHOI-dev.github.io/Knightstour/privacy-policy.html</p>
       </header>
 
       <section>
@@ -161,7 +134,7 @@
       <section>
         <h2>Analytics And Firebase</h2>
         <p>
-          The current private-test version of the app does not use Firebase Analytics or Firebase Crashlytics.
+          The app currently does not use Firebase Analytics or Firebase Crashlytics.
           If Firebase Analytics, Crashlytics, or another Firebase service is added in a future version, this policy will be updated before that version is published.
         </p>
         <p>
