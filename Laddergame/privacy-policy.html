@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>개인정보처리방침 | 사다리타기: 복불복, 뽑기, 점심내기, 벌칙</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #20242b;
+      --muted: #5f6978;
+      --line: #dce2ea;
+      --panel: #f6f8fb;
+      --brand: #1f6f78;
+      --brand-ink: #ffffff;
+      --warn: #7a4d00;
+      --warn-bg: #fff4d8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", Roboto, Arial, sans-serif;
+      line-height: 1.68;
+    }
+
+    header {
+      background: var(--brand);
+      color: var(--brand-ink);
+      padding: 44px 20px 38px;
+    }
+
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 56px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.28;
+      margin: 0;
+    }
+
+    h1 {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto 10px;
+      font-size: 30px;
+      font-weight: 800;
+    }
+
+    header p {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 15px;
+    }
+
+    h2 {
+      padding-top: 30px;
+      margin-top: 22px;
+      border-top: 1px solid var(--line);
+      font-size: 22px;
+    }
+
+    h3 {
+      margin-top: 22px;
+      font-size: 17px;
+    }
+
+    p {
+      margin: 12px 0 0;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 22px;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+
+    a {
+      color: #155e75;
+    }
+
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin: 0 0 28px;
+    }
+
+    .summary div,
+    .notice {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      padding: 14px 16px;
+    }
+
+    .summary strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .notice {
+      margin-top: 18px;
+    }
+
+    .notice.warning {
+      color: var(--warn);
+      background: var(--warn-bg);
+      border-color: #f0d38a;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin-top: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      min-width: 680px;
+      border-collapse: collapse;
+      background: #ffffff;
+    }
+
+    th,
+    td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    tr:last-child th,
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    th {
+      width: 28%;
+      background: #f8fafc;
+      font-weight: 700;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+      padding-top: 22px;
+      margin-top: 34px;
+    }
+
+    @media (max-width: 720px) {
+      header {
+        padding-top: 34px;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      .summary {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>개인정보처리방침</h1>
+    <p>사다리타기: 복불복, 뽑기, 점심내기, 벌칙 / Ladder Game : Lucky Draw</p>
+  </header>
+
+  <main>
+    <section class="summary" aria-label="기본 정보">
+      <div>
+        <strong>앱 이름</strong>
+        사다리타기: 복불복, 뽑기, 점심내기, 벌칙
+      </div>
+      <div>
+        <strong>패키지명</strong>
+        com.loganchoi.laddergame
+      </div>
+      <div>
+        <strong>시행일</strong>
+        2026년 7월 5일
+      </div>
+      <div>
+        <strong>개발자</strong>
+        Logan Choi
+      </div>
+    </section>
+
+    <p>
+      본 개인정보처리방침은 개발자가 제공하는 Android 앱
+      “사다리타기: 복불복, 뽑기, 점심내기, 벌칙”(이하 “앱”)에서 처리되는 정보와
+      이용자의 선택권을 설명합니다.
+    </p>
+
+    <div class="notice">
+      앱은 계정 가입, 로그인, 자체 서버 저장 기능을 제공하지 않습니다. 참가자 이름,
+      결과/벌칙 문구, 실행 설정은 앱 기능 제공을 위해 이용자의 기기 안에 저장될 수
+      있으며, 개발자 서버로 전송되지 않습니다.
+    </div>
+
+    <h2>1. 처리하는 정보</h2>
+    <h3>1.1 앱 기능을 위해 기기 안에 저장되는 정보</h3>
+    <p>앱은 사다리 게임 진행과 최근 상태 복원을 위해 다음 정보를 기기 안에 저장할 수 있습니다.</p>
+    <ul>
+      <li>이용자가 입력한 참가자 이름</li>
+      <li>이용자가 입력한 결과 또는 벌칙 문구</li>
+      <li>실행 속도, 공개 방식, 가림막 사용 여부 같은 앱 설정</li>
+    </ul>
+    <p>
+      위 정보는 앱의 로컬 저장소에 저장되며, 개발자가 운영하는 서버로 전송되지 않습니다.
+      이용자가 실제 이름, 전화번호, 주소, 민감한 문구 등을 직접 입력하는 경우 해당
+      내용이 기기 안에 저장될 수 있으므로 필요한 정보만 입력해 주세요.
+    </p>
+
+    <h3>1.2 광고 SDK가 처리할 수 있는 정보</h3>
+    <p>
+      앱은 광고 제공을 위해 Google Mobile Ads SDK를 사용합니다. Google Mobile Ads SDK는
+      광고 제공, 광고 성과 측정, 부정 사용 방지, 보안 및 분석 목적으로 다음 유형의
+      정보를 자동으로 수집하거나 Google 및 광고 파트너와 공유할 수 있습니다.
+    </p>
+    <div class="table-wrap">
+      <table>
+        <tbody>
+          <tr>
+            <th>대략적인 위치</th>
+            <td>IP 주소 등을 기반으로 추정되는 일반적인 위치 정보</td>
+          </tr>
+          <tr>
+            <th>앱 상호작용</th>
+            <td>앱 실행, 탭, 광고 노출 및 광고와의 상호작용 같은 사용 정보</td>
+          </tr>
+          <tr>
+            <th>진단 정보</th>
+            <td>SDK 및 앱 성능, 오류, 지연, 에너지 사용량 등 진단 목적의 정보</td>
+          </tr>
+          <tr>
+            <th>기기 또는 기타 ID</th>
+            <td>Android 광고 ID, 앱 세트 ID 등 광고와 부정 사용 방지에 사용될 수 있는 식별자</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      Google Mobile Ads SDK의 데이터 처리에 관한 자세한 내용은
+      <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" rel="noopener">
+        Google Mobile Ads SDK 데이터 공개 안내
+      </a>와
+      <a href="https://policies.google.com/privacy" rel="noopener">Google 개인정보처리방침</a>을
+      참고해 주세요.
+    </p>
+
+    <h3>1.3 결과 이미지 공유 시 처리되는 정보</h3>
+    <p>
+      이용자가 “결과 이미지 공유” 기능을 직접 선택하면 앱은 참가자와 결과 목록을 포함한
+      PNG 이미지를 기기 캐시 영역에 생성하고 Android 공유 시트를 통해 이용자가 선택한
+      앱으로 전달합니다. 공유 이후의 처리는 이용자가 선택한 외부 앱 또는 서비스의
+      개인정보처리방침을 따릅니다.
+    </p>
+
+    <h2>2. 정보를 처리하는 목적</h2>
+    <ul>
+      <li>참가자와 결과/벌칙을 표시하고 사다리 결과를 계산하기 위해 사용합니다.</li>
+      <li>이용자가 설정한 게임 상태를 기기에서 복원하기 위해 사용합니다.</li>
+      <li>이용자가 명시적으로 요청한 앱 공유, 앱 평가, 개인정보처리방침 열기, 결과 이미지 공유를 수행하기 위해 사용합니다.</li>
+      <li>광고 제공, 광고 성과 측정, 부정 사용 방지, 보안 및 분석을 위해 Google Mobile Ads SDK가 정보를 처리할 수 있습니다.</li>
+    </ul>
+
+    <h2>3. 제3자 제공 및 공유</h2>
+    <p>
+      개발자는 앱 기능을 위해 입력된 참가자 이름이나 결과/벌칙 문구를 자체 서버에
+      수집하거나 판매하지 않습니다.
+    </p>
+    <p>다만 다음 경우에는 정보가 제3자에게 전달될 수 있습니다.</p>
+    <ul>
+      <li>Google Mobile Ads SDK가 광고 제공 및 측정을 위해 Google 및 광고 파트너와 정보를 처리하는 경우</li>
+      <li>이용자가 Android 공유 시트에서 외부 앱을 선택해 결과 이미지 또는 앱 링크를 공유하는 경우</li>
+      <li>이용자가 앱 평가하기 또는 개인정보처리방침 링크 열기처럼 외부 브라우저나 Play Store로 이동하는 경우</li>
+      <li>법령상 요구가 있거나 보안, 사기 방지, 권리 보호를 위해 필요한 경우</li>
+    </ul>
+
+    <h2>4. 보관 및 삭제</h2>
+    <p>
+      앱에 저장된 참가자 이름, 결과/벌칙 문구, 설정은 이용자의 기기에 보관됩니다.
+      이용자는 앱 안에서 내용을 수정하거나, Android 설정에서 앱 데이터를 삭제하거나,
+      앱을 삭제하여 로컬 데이터를 제거할 수 있습니다.
+    </p>
+    <p>
+      결과 공유를 위해 생성된 이미지 파일은 앱의 캐시 영역에 저장됩니다. Android 시스템
+      또는 이용자의 저장공간 정리 동작에 따라 삭제될 수 있으며, 앱 데이터 삭제 또는 앱
+      삭제를 통해 제거할 수 있습니다.
+    </p>
+    <p>
+      광고 SDK가 처리하는 정보의 보관 및 삭제는 Google의 정책과 이용자의 Google/Android
+      광고 설정을 따릅니다. 이용자는 Android 설정에서 광고 ID를 재설정하거나 삭제할 수
+      있습니다.
+    </p>
+
+    <h2>5. 이용자의 선택권</h2>
+    <ul>
+      <li>참가자 이름과 결과/벌칙 문구는 앱 안에서 수정하거나 삭제할 수 있습니다.</li>
+      <li>결과 이미지 공유는 이용자가 직접 공유 버튼을 누를 때만 실행됩니다.</li>
+      <li>광고 맞춤설정과 광고 ID 관리는 Android 또는 Google 설정에서 변경할 수 있습니다.</li>
+      <li>앱 데이터 삭제 또는 앱 삭제를 통해 기기에 저장된 앱 데이터를 제거할 수 있습니다.</li>
+    </ul>
+
+    <h2>6. 아동의 개인정보</h2>
+    <p>
+      앱은 어린이를 주된 대상으로 설계되지 않았으며, 회원가입이나 직접적인 개인정보
+      수집 기능을 제공하지 않습니다. 보호자는 아동이 실제 이름, 연락처, 주소, 학교명 등
+      개인을 식별할 수 있는 내용을 참가자 이름이나 결과 문구에 입력하지 않도록 안내해
+      주세요.
+    </p>
+
+    <h2>7. 보안</h2>
+    <p>
+      앱은 기기 안에 저장되는 정보를 Android 앱 저장소에 보관합니다. Google Mobile Ads SDK를
+      통해 전송되는 데이터는 Google의 설명에 따라 전송 중 암호화됩니다. 다만 어떤 전자적
+      저장 또는 전송 방식도 절대적인 보안을 보장할 수는 없습니다.
+    </p>
+
+    <h2>8. 개인정보처리방침 변경</h2>
+    <p>
+      앱 기능, 광고 SDK, 법령 또는 정책 요구사항이 변경되는 경우 본 개인정보처리방침을
+      수정할 수 있습니다. 중요한 변경이 있는 경우 앱 또는 배포 페이지를 통해 변경된
+      내용을 안내합니다.
+    </p>
+
+    <h2>9. 문의</h2>
+    <p>
+      개인정보처리방침에 관한 문의는 Google Play 스토어에 표시되는 개발자 연락처를 통해
+      접수해 주세요. Play Console 제출 전 실제 공개 URL과 개발자 연락처가 확정되면 이
+      문구를 해당 연락처로 교체하는 것을 권장합니다.
+    </p>
+
+    <div class="notice warning">
+      공개 게시 전 확인 필요: 이 HTML 파일은 현재 로컬 코드와 릴리스 문서를 기준으로 작성된
+      정책 초안입니다. Google Play에 제출하기 전 실제 게시 URL, 개발자 연락처, 최종 광고
+      단위 및 대상 연령 설정을 확인해 주세요.
+    </div>
+
+    <footer>
+      <p>문서 경로: docs/release/privacy-policy/privacy-policy.html</p>
+      <p>근거: 현재 Android 프로젝트 코드, manifest 병합 결과, Google Mobile Ads SDK 데이터 공개 안내.</p>
+    </footer>
+  </main>
+</body>
+</html>
