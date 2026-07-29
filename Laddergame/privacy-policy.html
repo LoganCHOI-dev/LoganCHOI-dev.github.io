@@ -74,6 +74,7 @@
       <h1>Privacy Policy</h1>
 
       <p>This Privacy Policy explains how the Android application covered by this page handles information. It describes the information processed on the device, the information handled by advertising services, and the choices available to users.</p>
+      <p><strong>Last updated:</strong> July 29, 2026</p>
 
       <div class="notice">
         <p>The application does not provide its own account system, login, developer-operated server, or account synchronization service. User-entered game data is designed to remain on the device unless the user explicitly shares it through Android's sharing features.</p>
@@ -99,6 +100,7 @@
         <li>Saving, displaying, and deleting result records at the user's request</li>
         <li>Creating a result image and sharing it through an external app selected by the user</li>
         <li>Sharing an app link, opening the app store for rating, or opening this policy when the user selects those actions</li>
+        <li>Measuring feature use and application performance after the applicable analytics consent state permits collection</li>
         <li>Displaying banner and interstitial advertisements</li>
       </ul>
 
@@ -127,28 +129,43 @@
       <p>Google states that information collected by the Google Mobile Ads SDK is encrypted in transit using TLS. The Android Advertising ID can be reset or deleted through Android settings, subject to the controls provided by the operating system.</p>
       <p>For more information, see <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" rel="noopener">Google Mobile Ads SDK data disclosure</a> and <a href="https://policies.google.com/privacy" rel="noopener">Google's Privacy Policy</a>.</p>
 
-      <h2>6. Consent and privacy choices for advertising</h2>
+      <h2>6. Firebase Analytics</h2>
+      <p>The application uses Google Firebase Analytics to understand whether core features work as intended and how users move through the application. Analytics collection is disabled by default and is enabled only after the application's consent flow reports a state that permits analytics storage. If consent is denied, unavailable, incomplete, or cannot be interpreted, analytics collection remains disabled.</p>
+      <p>When collection is permitted, Firebase Analytics may process:</p>
+      <ul>
+        <li>Application lifecycle and engagement information automatically provided by Firebase</li>
+        <li>Screen names within the application, such as game, menu, settings, edit, and results screens</li>
+        <li>Feature events such as starting or completing a ladder run, creating a new ladder, viewing all results, saving a result, selecting a share target, and attempting to show an interstitial advertisement</li>
+        <li>Limited categorical or numeric details, such as participant count, winner count, result mode, run type, completion count, save outcome, share content type, and advertisement-attempt outcome</li>
+        <li>Device, application, and diagnostic information that Firebase Analytics processes automatically under Google's service terms and documentation</li>
+      </ul>
+      <p>The application does not include participant names, user-entered result or penalty text, exact participant-to-result mappings, saved-record identifiers, ladder seeds, search text, shared image contents, file paths, URIs, selected share-target packages, consent strings, advertising unit identifiers, exception messages, or stack traces in its custom analytics events.</p>
+      <p>Advertising ID collection for Firebase Analytics is disabled in the application configuration. Default ad-personalization signals and Firebase automatic screen reporting are also disabled; the application records only its defined Compose screen routes. Analytics data is transmitted to and processed by Google. Retention and deletion of data already received by Firebase are governed by the configured Firebase/Google Analytics settings and Google's applicable policies.</p>
+      <p>For more information, see <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase privacy and security information</a>, <a href="https://firebase.google.com/docs/analytics" rel="noopener">Firebase Analytics documentation</a>, and <a href="https://policies.google.com/privacy" rel="noopener">Google's Privacy Policy</a>.</p>
+
+      <h2>7. Consent and privacy choices</h2>
       <p>The application uses Google's User Messaging Platform (UMP) SDK to update consent information at app launch, show a consent form when required, and provide a privacy-options entry point when required.</p>
       <p>Before the consent state allows ad requests, the application does not initialize Google Mobile Ads or request banner or interstitial ads. Depending on the user's region and choices, Google may serve personalized, non-personalized, limited, or other permitted forms of advertising.</p>
-      <p>When the UMP SDK indicates that privacy options are available, the application provides a <em>Privacy options</em> entry in Settings so the user can review or change the available choices. Consent and privacy-choice information is handled by Google through the UMP and advertising services according to the choices presented and Google's applicable policies.</p>
+      <p>When the UMP SDK indicates that privacy options are available, the application provides a <em>Privacy options</em> entry in Settings so the user can review or change the available choices. The application re-evaluates analytics collection after this flow. If the resulting state does not permit analytics storage, new analytics events are not collected. Events that occurred while collection was disabled are not queued or sent later.</p>
+      <p>Consent and privacy-choice information is handled by Google through UMP, advertising, and analytics services according to the choices presented and Google's applicable policies.</p>
       <p>For more information about UMP and ad-serving modes, see <a href="https://developers.google.com/admob/android/privacy" rel="noopener">Google's UMP SDK guidance</a> and <a href="https://developers.google.com/admob/android/privacy/ad-serving-modes" rel="noopener">Google's ad-serving modes guidance</a>.</p>
 
-      <h2>7. Permissions</h2>
-      <p>The application does not request access to contacts, precise or approximate device location, camera, microphone, calendar, health information, or financial information for its own features. Network access is used by the advertising SDK when advertising is permitted by the consent state.</p>
+      <h2>8. Permissions</h2>
+      <p>The application does not request access to contacts, precise or approximate device location, camera, microphone, calendar, health information, or financial information for its own features. Network access is used by Google Mobile Ads when advertising is permitted and by Firebase Analytics when analytics collection is permitted.</p>
 
-      <h2>8. Information shared with third parties</h2>
-      <p>The developer does not sell or provide user-entered participant names, result labels, or game settings to a developer-operated server. Google Mobile Ads SDK may transmit and share advertising-related information as described in Section 5. A user-initiated share may also transfer the selected result image or app link to the external app or service chosen by the user.</p>
+      <h2>9. Information shared with third parties</h2>
+      <p>The developer does not sell or provide user-entered participant names, result labels, or game settings to a developer-operated server. Google Mobile Ads SDK may transmit and share advertising-related information as described in Section 5. Firebase Analytics may transmit analytics information to Google as described in Section 6 when collection is permitted. A user-initiated share may also transfer the selected result image or app link to the external app or service chosen by the user.</p>
 
-      <h2>9. Children's privacy</h2>
+      <h2>10. Children's privacy</h2>
       <p>The application is not directed to children under 13. It does not provide child accounts, login, or a developer-operated service for knowingly collecting children's personal information. If you believe that a child has provided personal information through the application, please contact us using the address below.</p>
 
-      <h2>10. Security</h2>
-      <p>The application stores its own game data in Android application storage and does not operate a server containing that data. Data transmitted by Google Mobile Ads SDK is subject to the SDK's transport and security practices. No method of storage or transmission is completely secure, so users should protect their device, keep Android up to date, and review content before sharing it.</p>
+      <h2>11. Security</h2>
+      <p>The application stores its own game data in Android application storage and does not operate a server containing that data. Data transmitted by Google Mobile Ads SDK and Firebase Analytics is subject to Google's transport and security practices. No method of storage or transmission is completely secure, so users should protect their device, keep Android up to date, and review content before sharing it.</p>
 
-      <h2>11. Changes to this Privacy Policy</h2>
+      <h2>12. Changes to this Privacy Policy</h2>
       <p>This Privacy Policy may be updated when application features, advertising services, legal requirements, or applicable policies change. Any updated version will be published on this page.</p>
 
-      <h2>12. Contact</h2>
+      <h2>13. Contact</h2>
       <p>For questions about this Privacy Policy or the handling of information, contact:</p>
       <ul>
         <li>Developer: Logan CHOI</li>
@@ -158,4 +175,3 @@
   </main>
 </body>
 </html>
-
