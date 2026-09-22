@@ -1,76 +1,47 @@
 <!doctype html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>내차어딨었지? 개인정보처리방침 | Where Did I Park? Privacy Policy</title>
+  <title>Where Did I Park? — Privacy Policy</title>
   <style>
-    :root { color-scheme: light dark; --blue:#0b6ef3; --line:#d9e2ef; --muted:#5b6678; }
-    * { box-sizing:border-box; }
-    body { margin:0; font-family:system-ui,-apple-system,"Segoe UI","Noto Sans KR",sans-serif; line-height:1.65; background:#f5f8fc; color:#152238; }
-    main { width:min(880px,calc(100% - 32px)); margin:32px auto; padding:36px; background:#fff; border:1px solid var(--line); border-radius:24px; box-shadow:0 12px 40px rgba(24,54,92,.08); }
-    h1 { margin:0 0 8px; font-size:clamp(28px,5vw,42px); }
-    h2 { margin:32px 0 8px; font-size:21px; color:#0b4ca8; }
-    p,li { color:#34445d; }
-    .meta,.note { padding:14px 16px; border-radius:12px; background:#edf5ff; color:#234b7b; }
-    .lang { display:inline-block; margin-top:24px; padding:5px 10px; border-radius:999px; background:var(--blue); color:#fff; font-weight:700; }
-    a { color:var(--blue); }
-    footer { margin-top:34px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
-    @media (prefers-color-scheme: dark) { body{background:#071426;color:#edf4ff} main{background:#0d2038;border-color:#29415f} h2{color:#81b5ff} p,li{color:#cbd8e9} .meta,.note{background:#102f55;color:#cfe3ff} }
+    :root{color-scheme:light dark;font-family:system-ui,sans-serif;line-height:1.65;color:#152238;background:#f5f8fc}
+    body{margin:0}main{max-width:800px;margin:32px auto;padding:32px;background:#fff;border-radius:20px}
+    h1{font-size:2rem;line-height:1.2}h2{margin-top:32px;color:#0b4ca8;font-size:1.3rem}a{color:#0b6ef3;overflow-wrap:anywhere}.meta{color:#53647d}li{margin:8px 0}
+    @media(max-width:600px){main{margin:0;padding:24px;border-radius:0}}
+    @media(prefers-color-scheme:dark){:root{background:#071426;color:#edf4ff}main{background:#0d2038}h2,a{color:#81b5ff}.meta{color:#becde0}}
   </style>
 </head>
-<body>
-<main>
-  <h1>내차어딨었지? 개인정보처리방침</h1>
-  <p class="meta">시행일: 2026년 9월 1일 · 앱 패키지: <code>com.loganchoi.whereismycar</code></p>
-
-  <h2>1. 처리하는 정보</h2>
-  <ul>
-    <li>사용자가 촬영한 주차 사진과 촬영 시각</li>
-    <li>사용자가 허용한 경우의 대략적 또는 정확한 주차 위치, 측정 정확도와 저장 시각</li>
-    <li>자동 삭제 기간, 보관 여부, 앱 언어와 위젯 사진 표시 같은 앱 설정</li>
-  </ul>
-  <p>위 정보는 계정 없이 사용자의 기기 내 앱 전용 저장소에 저장됩니다. 사진에는 위치 EXIF를 기록하지 않으며 일반 갤러리나 MediaStore에 추가하지 않습니다.</p>
-
-  <h2>2. 이용 목적</h2>
-  <p>주차 사진과 단서 확인, 지도에서 주차 위치 표시·수정, 위젯 표시, 사용자가 선택한 기간에 따른 자동 삭제를 제공하기 위해 사용합니다.</p>
-
-  <h2>3. 외부 전송과 제3자 서비스</h2>
-  <p>개발자는 사진과 저장된 주차 좌표를 자체 서버로 전송하거나 판매하지 않습니다. 앱에는 광고, 자체 분석 SDK, 로그인 또는 계정 기능이 없습니다.</p>
-  <p>앱 내 지도를 표시할 때 Google Maps SDK for Android와 Google Play services가 사용됩니다. Google 공식 안내에 따르면 Maps SDK는 서비스 제공과 개선을 위해 요청·기기 메타데이터, SDK 내부 충돌 지표와 스택 트레이스, IP 주소, Maps SDK 전용 가명 식별자 및 지도 이동·확대 같은 상호작용 정보를 자동 수집할 수 있습니다. 해당 처리는 Google의 정책이 적용됩니다.</p>
-  <p><a href="https://policies.google.com/privacy">Google 개인정보처리방침</a> · <a href="https://developers.google.com/maps/documentation/android-sdk/play-data-disclosure">Maps SDK 데이터 공개 안내</a></p>
-
-  <h2>4. 보관과 삭제</h2>
-  <p>기본 자동 삭제 기간은 72시간이며 사용자는 1일, 2일, 3일, 7일 또는 자동 삭제 안 함으로 변경할 수 있습니다. 사용자는 앱에서 주차 기록을 즉시 삭제하거나 명시적으로 보관할 수 있습니다. 앱을 삭제하면 앱 전용 데이터도 함께 삭제될 수 있으며 클라우드 백업과 기기 간 전송 대상에서 제외됩니다.</p>
-
-  <h2>5. 권한</h2>
-  <ul>
-    <li><strong>카메라:</strong> 주차 사진과 단서 사진 촬영</li>
-    <li><strong>대략적·정확한 위치:</strong> 사용자가 선택한 경우 현재 주차 위치 저장. 앱이 화면에 표시된 동안의 일시적 요청만 사용하며 백그라운드 위치는 사용하지 않습니다.</li>
-    <li><strong>인터넷:</strong> Google 지도 타일과 관련 서비스를 표시</li>
-  </ul>
-  <p>위치 권한을 거부해도 사진 기록 기능은 사용할 수 있습니다.</p>
-
-  <h2>6. 이용자의 선택</h2>
-  <p>사용자는 위치 저장을 사용하지 않거나, 지도 핀을 수정하거나, 사진과 기록을 삭제·보관하고, 위젯의 사진 노출을 끌 수 있습니다. 계정이나 개발자 서버가 없으므로 별도의 서버 데이터 삭제 요청 절차는 없습니다.</p>
-
-  <h2>7. 아동</h2>
-  <p>이 앱은 아동을 대상으로 설계된 서비스가 아니며 아동의 개인정보를 의도적으로 수집하는 계정·소셜 기능을 제공하지 않습니다.</p>
-
-  <h2>8. 문의와 변경</h2>
-  <p>문의: <a href="https://github.com/ElectronicCalculator/where-is-my-car/issues">GitHub 이슈</a></p>
-  <p>기능, SDK 또는 법적 요구사항이 바뀌면 이 방침을 갱신하고 시행일을 변경합니다.</p>
-
-  <span class="lang">English</span>
+<body><main>
   <h1>Where Did I Park? Privacy Policy</h1>
-  <p class="meta">Effective: September 1, 2026 · Package: <code>com.loganchoi.whereismycar</code></p>
-  <p>The app stores parking photos, timestamps, optional approximate or precise parking coordinates and accuracy, retention choices, language, and widget preferences in app-specific storage on the user’s device. It does not add photos to the public gallery or embed location EXIF data.</p>
-  <p>The developer does not operate an account system or server that receives parking photos or saved coordinates, and the app contains no advertising or first-party analytics. Google Maps SDK for Android and Google Play services are used to display maps. Google states that Maps SDK may automatically collect request and device metadata, SDK crash metrics and stack traces, IP address, a Maps SDK-specific pseudonymous identifier, and map interaction events to provide and improve Google services. Google’s own policies apply to that processing.</p>
-  <p>Photos and records are automatically deleted according to the selected retention period (72 hours by default), unless the user keeps them. Users can delete records, disable location storage, adjust the map pin, or hide photos from the widget. Camera is used for parking photos; foreground approximate or precise location is optional; internet access is used for Google Maps. No background location is used.</p>
-  <p>This app is not designed for children. Questions may be submitted through <a href="https://github.com/ElectronicCalculator/where-is-my-car/issues">GitHub Issues</a>.</p>
-
-  <footer>This private-test draft must be reviewed again if SDKs, data handling, contact details, or Play Console requirements change.</footer>
-</main>
-</body>
+  <p class="meta">Effective September 22, 2026 · Developer: Logan Choi<br>Android package: <code>com.loganchoi.whereismycar</code></p>
+  <p>Where Did I Park? helps you remember a parking place using photos and an optional map location. This policy explains local parking records and the Google services used for maps, advertising, consent and optional usage analytics. Earlier versions may not include advertising or analytics.</p>
+  <h2>1. Parking information on your device</h2>
+  <p>The app stores photos you take, capture times, optional approximate or precise parking coordinates and accuracy, and preferences such as retention periods, language and widget visibility in app-specific storage on your device. Photos are not added to the public gallery and location EXIF metadata is not written to them. Parking photos and records are excluded from Android cloud backup and device transfer.</p>
+  <p>We do not operate a server that receives your parking photos or saved coordinates. The app does not send photo content or parking coordinates as advertising or analytics event parameters. It has no account or login system.</p>
+  <h2>2. Permissions and maps</h2>
+  <p>Camera permission is used to take photos. Approximate or precise location permission is optional and used temporarily while the relevant app feature is in the foreground. The app does not request background location or continuously track your movements. Denying location permission does not prevent photo recording.</p>
+  <p>Google Maps SDK for Android and Google Play services provide maps and foreground location. Google may process IP addresses, device and request metadata, SDK identifiers, map interactions and diagnostic information. Internet access also supports the advertising, consent and analytics services described below.</p>
+  <p><a href="https://policies.google.com/privacy">Google Privacy Policy</a> · <a href="https://developers.google.com/maps/documentation/android-sdk/play-data-disclosure">Google Maps data disclosure</a></p>
+  <h2>3. Advertising and consent</h2>
+  <p>The app uses Google AdMob for banner ads and occasional interstitial ads following eligible parking-completion actions. Google Mobile Ads SDK may collect and share IP addresses (including approximate location inferred from IP), advertising or other device identifiers, ad and app interactions, and performance or diagnostic information. These support ad delivery, measurement, security and fraud prevention. Advertising partners may process information according to your consent choices and their policies.</p>
+  <p>Google User Messaging Platform (UMP) manages applicable consent messages and privacy choices. Where required, you can consent, decline or manage options before eligible ad requests. If available for your region, use Privacy options in the app settings to review or withdraw your choices. Ad availability and personalisation depend on your choices, regional requirements and Google settings; declining personalised advertising does not necessarily remove all ads.</p>
+  <p><a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">AdMob data disclosure</a> · <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from partner apps</a></p>
+  <h2>4. Optional usage analytics</h2>
+  <p>Google Analytics for Firebase is used to understand feature usage and reliability. Usage analytics starts off and requires you to enable the usage-analytics setting, along with applicable consent permissions. You can turn this setting off at any time to stop future app analytics collection.</p>
+  <p>When enabled, analytics may process app-instance identifiers, device and app information, usage events and approximate regional information. Our custom events describe record creation, photo addition, parking-completion choices and results, app language, entry source and ad load/display outcomes. They do not contain photos, coordinates, file paths or free-form parking notes. Advertising SDK measurement is separate from this optional app-analytics setting.</p>
+  <p><a href="https://firebase.google.com/support/privacy">Firebase privacy information</a></p>
+  <h2>5. Retention and deletion</h2>
+  <p>Local parking records expire after 72 hours by default. You can choose a different retention period or no automatic deletion, explicitly keep a record, or delete it in the app. Expired records are removed when the app or its scheduled cleanup runs; device restrictions may delay cleanup. Kept records are excluded from expiry. Uninstalling the app or clearing its storage removes local app data.</p>
+  <p>Deleting local records or disabling analytics does not automatically erase information already processed by Google or advertising partners. Their retention practices depend on the service, its settings and applicable requirements. Contact us for privacy requests; we may need sufficient information to identify relevant data without collecting unnecessary parking information.</p>
+  <h2>6. Your choices and rights</h2>
+  <p>You can deny or revoke camera/location permissions in Android settings, change retention, delete or keep records, hide widget photos, switch off usage analytics and use the available privacy options. Android also provides advertising ID controls. Depending on your location, you may have rights to access, correct, delete or restrict processing of personal data, withdraw consent, or complain to a relevant data protection authority. Withdrawing consent does not affect processing already lawfully performed.</p>
+  <h2>7. Service providers and security</h2>
+  <p>Google and relevant advertising partners may process information on servers outside your country. Their privacy policies describe applicable safeguards and processing. Local parking data is stored in the app's private storage, and Google SDK communications use network security protections. No storage or transmission method can be guaranteed completely secure.</p>
+  <h2>8. Children</h2>
+  <p>The app is intended for a general adult audience and is not designed for children. If you believe a child has provided personal information through the app, please contact us.</p>
+  <h2>9. Contact and updates</h2>
+  <p>For privacy questions or requests, email <a href="mailto:weimaraner.logan.choi@gmail.com">weimaraner.logan.choi@gmail.com</a>. Please do not send parking photos or exact locations unless necessary for your request.</p>
+  <p>We may update this policy when features, services or data practices change. The effective date above identifies the current version.</p>
+</main></body>
 </html>
-
