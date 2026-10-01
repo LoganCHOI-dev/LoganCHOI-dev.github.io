@@ -145,6 +145,8 @@
         <h2>Analytics And Firebase</h2>
         <p>
           The app uses Google Firebase Analytics to understand app usage, game progression, and advertising opportunities.
+          Firebase Analytics is enabled by default in the production app and may initialize before the advertising consent flow finishes.
+          Analytics storage and transmission may vary with consent signals and Google's SDK behavior.
           The app records limited events for screens and sessions, selected board size and mode, progress milestones, blocked and completed puzzles,
           Undo use and recharge, and opportunities to show interstitial or rewarded ads.
         </p>
@@ -228,4 +230,3 @@
   </main>
 </body>
 </html>
-
