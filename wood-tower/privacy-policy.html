@@ -124,12 +124,12 @@
       <p class="eyebrow">Privacy Policy</p>
       <h1>Your privacy,<br>handled with care.</h1>
       <p class="app-name">Wood Tower: Balance Blocks</p>
-      <p class="public-url">https://electroniccalculator.github.io/wood-tower/privacy-policy.html</p>
+      <p class="public-url">https://loganchoi-dev.github.io/wood-tower/privacy-policy.html</p>
     </header>
 
     <article>
       <p class="summary">
-        Wood Tower: Balance Blocks is an offline, local party game. It does not require an account and the developer does not operate a server that receives your gameplay or player names. The app uses Google Mobile Ads, which may process device and usage data to provide, measure, and protect advertising.
+        Wood Tower: Balance Blocks is an offline, local party game intended for users aged 16 and older. It does not require an account and the developer does not receive player names. Before Google Mobile Ads or Firebase Analytics can collect data, the app asks for a date of birth and derives only a protected-or-adult category on the device. The date of birth itself is not stored or transmitted.
       </p>
 
       <section>
@@ -138,9 +138,10 @@
         <div class="data-card">
           <strong>Stored only on your device</strong>
           <ul>
-            <li>Completed-game count, used to control when a replay-boundary ad may be requested.</li>
             <li>Whether the first-run guide has been completed.</li>
-            <li>Your selected haptic strength.</li>
+            <li>Your sound and selected haptic settings.</li>
+            <li>Only the derived age category: protected (under 18 or date not provided) or adult (18 or older).</li>
+            <li>An advertising consent profile containing the derived age category and advertising privacy settings, used to check whether cached Google consent applies.</li>
           </ul>
         </div>
         <div class="data-card">
@@ -149,12 +150,12 @@
             <li>Player display names and order entered for a local game or immediate rematch.</li>
           </ul>
         </div>
-        <p>This app does not require registration and does not ask for an email address, phone number, contacts, calendar, precise location, photos, microphone access, payment information, health information, or government identification.</p>
+        <p>The date of birth is used only on the device to derive the category above and is then discarded. It is not saved in app storage, included in analytics, or sent to Google. This app does not require registration and does not ask for an email address, phone number, contacts, calendar, precise location, photos, microphone access, payment information, health information, or government identification.</p>
       </section>
 
       <section>
         <h2>2. Advertising and third-party data</h2>
-        <p>The app uses the Google Mobile Ads SDK (AdMob) to display interstitial advertising outside active gameplay, at a completed-game replay boundary. Google and its advertising partners may automatically collect or share:</p>
+        <p>The app uses the Google Mobile Ads SDK (AdMob). A fixed banner is placed in a dedicated area outside the game viewport, controls, and touch region. For completed party games, an interstitial may be requested after the 3.5-second collapse presentation and before the result is shown. Google and its advertising partners may automatically collect or share:</p>
         <ul>
           <li>IP address, which may be used to estimate a general location.</li>
           <li>App interactions, such as app launches, taps, and ad or video views.</li>
@@ -166,45 +167,53 @@
       </section>
 
       <section>
-        <h2>3. Families and advertising settings</h2>
-        <p>The app is a general-audience local party game that may be used by families, including children. The app applies the following settings to all ad requests:</p>
+        <h2>3. Intended age range and advertising privacy settings</h2>
+        <p>The app is intended for users aged 16 and older, including teenagers aged 16 or 17 and adults. It is not intended for users under 16. This intended audience does not mean every user is an adult. Before advertising or analytics collection is allowed, the app presents a neutral screen with empty year, month, and day fields. The screen does not prefill a date or suggest that an adult age is required. The app uses the date entered by the user to select privacy settings; it does not independently verify identity or age. The complete date is processed only on the device and immediately discarded; only the derived protected-or-adult category is stored and can be changed later.</p>
         <ul>
-          <li>Child-directed treatment is enabled.</li>
-          <li>Under-age-of-consent treatment is enabled.</li>
-          <li>The maximum ad content rating is set to G.</li>
-          <li>Publisher privacy personalization is disabled.</li>
+          <li>Users whose entered date indicates they are under 18, including those aged 16 or 17, and users who choose not to provide a date are treated as protected. Child-directed advertising treatment is enabled, the publisher disables personalization, and Firebase Analytics collection remains off.</li>
+          <li>If no age category has been established, or the saved category is missing or invalid, advertising is not initialized and Firebase Analytics collection remains off until an age category is set.</li>
+          <li>For adults, advertising and analytics privacy choices are evaluated through Google's User Messaging Platform and Consent Mode according to the applicable region.</li>
+          <li>The maximum ad content rating is set to G for every age range.</li>
         </ul>
         <p>These settings limit advertising treatment, but Google Mobile Ads may still process the data described above for permitted advertising, measurement, security, and compliance purposes.</p>
       </section>
 
       <section>
-        <h2>4. How information is used and shared</h2>
-        <p>Local game settings are used only to operate the app and remain on the device. The developer does not sell personal information and does not share locally stored game settings or session player names with third parties.</p>
+        <h2>4. Anonymous usage statistics</h2>
+        <p>Firebase Analytics collection is off before the age category and applicable Google privacy choices have been evaluated. It remains off for protected users. For adults, collection is enabled only when Google's Consent Mode result permits analytics storage under the applicable regional message or configured default consent state. Changing from adult to protected disables collection and clears queued in-memory analytics events and local analytics state.</p>
+        <p>When collection is permitted, the app records a limited set of screens and game-flow events, such as game start and end, result actions, and whether an interstitial was attempted or dismissed. The app does not put the entered date of birth, derived age category, player names, a custom user ID, touch coordinates, or continuous physics values in analytics events. Google Mobile Ads may separately record its own automatic advertising events.</p>
+        <p>For more information, see <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a> and <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+      </section>
+
+      <section>
+        <h2>5. How information is used and shared</h2>
+        <p>Local game and privacy settings are used only to operate the app and remain on the device. The developer does not sell personal information and does not share locally stored settings or session player names with third parties.</p>
         <p>Data processed by Google Mobile Ads is shared with Google and applicable advertising service providers as described in their policies. Tapping an ad may open a third-party service governed by that service's own privacy policy.</p>
+        <p>For an adult whose applicable Consent Mode result permits analytics storage, the limited analytics data described above is processed by Google Firebase for product analytics.</p>
       </section>
 
       <section>
-        <h2>5. Security</h2>
-        <p>Local settings are stored within the app's private storage managed by Android. Data collected by the Google Mobile Ads SDK is encrypted in transit using Transport Layer Security (TLS), according to Google's SDK disclosure. No method of storage or transmission is completely secure.</p>
+        <h2>6. Security</h2>
+        <p>Local settings are stored within the app's private storage managed by Android. Data processed by Google SDKs is encrypted in transit according to Google's disclosures. No method of storage or transmission is completely secure.</p>
       </section>
 
       <section>
-        <h2>6. Retention and deletion</h2>
+        <h2>7. Retention and deletion</h2>
         <ul>
           <li>Player display names are kept only in memory for the current game or immediate rematch and are cleared when that session ends or the app process closes.</li>
-          <li>Completed-game count, guide completion, and haptic preference remain on the device until you clear the app's storage or uninstall the app.</li>
+          <li>Guide completion, sound, haptic, the derived protected-or-adult category, and the advertising consent profile remain on the device until they are changed or cleared by the app, you clear the app's storage, or you uninstall the app. The complete date of birth is never retained.</li>
           <li>The developer does not maintain a server-side account or gameplay database, so there is no developer-held account record to delete.</li>
-          <li>Google and its service providers control the retention and deletion of data they process under their own policies. Android advertising ID controls may be used to reset or delete the advertising ID.</li>
+          <li>Google and its service providers control retention and deletion of advertising data and analytics data collected when permitted under their own policies. Android advertising ID controls may be used to reset or delete the advertising ID.</li>
         </ul>
       </section>
 
       <section>
-        <h2>7. Changes to this policy</h2>
+        <h2>8. Changes to this policy</h2>
         <p>This policy may be updated when the app's features, SDKs, advertising, or data practices change. The current version will remain available at the public URL shown above.</p>
       </section>
 
       <section>
-        <h2>8. Contact</h2>
+        <h2>9. Contact</h2>
         <div class="contact">
           For privacy questions about Wood Tower: Balance Blocks, contact<br>
           <a href="mailto:weimaraner.logan.choi@gmail.com"><strong>weimaraner.logan.choi@gmail.com</strong></a>
@@ -212,7 +221,8 @@
       </section>
     </article>
 
-    <footer>Wood Tower: Balance Blocks · Privacy Policy</footer>
+    <footer>Wood Tower: Balance Blocks · Privacy Policy · Updated October 1, 2026</footer>
   </main>
 </body>
 </html>
+
